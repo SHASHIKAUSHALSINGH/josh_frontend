@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- linking swiper to css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navi">
+
+            <div class="jtgeats">
+                <img src="./images/JTGeats.png" alt="">
+            </div>
+            <div>
+                <ul class="menue">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menue</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <!-- <div class="search_cart">
+                    <div>
+                        <img src="./images/Card.png" alt="">
+                    </div>
+                    <div>
+                
+                        <img src="./images/Card (1).png" alt="">
+                    </div>
+                </div> -->
+
+            <div id="cart-icon" class="cart-button search_cart">
+                <div>
+                    <img src="./images/Card.png" alt="Cart Icon" />
+                </div>
+                <div>
+                    <img src="./images/Card (1).png" alt="Cart Icon 2" />
+                </div>
+            </div>
+        </nav>
+        <div id="cart-modal" class="modal-cart hidden">
+            <div class="modal-content">
+
+                <img src="./images/akar-icons_shopping-bag.png" alt="cart image" class="cart-image-modal">
+
+                <h2>Cart is Empty</h2>
+                <p>Add some items to the cart to checkout</p>
+                <!-- <button id="close-cart-modal" class="btn-wrapper roboto-bold">Back to Menu</button> -->
+                <div id="close-cart-modal" class="btn-par">
+                    <button class="btn-wrapper roboto-bold">Request a Demo</button>
+                </div>
+            </div>
+        </div>
+        <div id="request-dish-modal" class="modal-cart hidden">
+            <div class="dish-modal">
+                <h2 class="modal-title">Request a Dish</h2>
+                <form class="modal-form">
+
+                    <label for="dish-name" class="form-label">Name*</label>
+                    <input id="dish-name" type="text" placeholder="Enter name of the dish" class="input-field">
+                    <label for="image-url" class="form-label">Upload an image</label>
+                    <input id="image-url" type="text" placeholder="Paste a URL" class="input-field">
+
+                </form>
+                <div class="button-group">
+                    <button id="cancel-request" class="cancel-btn">Cancel</button>
+                    <button id="submit-request" class="submit-btn">Submit Request</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="landing_section">
+        <div class="hero_display">
+
+            <div class="heading1">Authentic Home Food in India</div>
+            <div class="subheading">JTGeats is a courier service in which home cook food is delivered to a customer.
+            </div>
+            <div class="search">
+                <div class="searchbackground">
+                    <div>
+
+                        <input type="text" placeholder="Search food you love">
+
+
+                    </div>
+                </div>
+
+
+                <div>
+                    <button class="searchbutton">Search</button>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="image">
+            <img src="./images/cuate.png" alt="">
+        </div>
+    </div>
+    <div class="section2">
+
+        <div class="homekiten">
+            <h1 class="sec_head">Home Kitchen</h1>
+
+            <div class="cards">
+
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                    <div class="frame16">
+                        <div class="frame14">
+
+                            <div>
+                                <h3>Home made pizza</h3>
+                            </div>
+                            <div>
+                                <h3>$299</h3>
+                            </div>
+                        </div>
+                        <div class="frame14">
+                            <div class="insideframe14">
+                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                <div>4.7</div>
+                            </div>
+                            <div class="insideframe14">
+                                <div>15-17 min</div>
+                            </div>
+                            <div><img src="./images/Card (2).png" alt=""></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="popular-items ">
+            <h1>Popular Items</h1>
+            <div class="slider">
+
+
+
+                <section class="product">
+                    <!-- <h2 class="product-category">best selling</h2> -->
+                    <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+                    <div class="product-container">
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card"><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                            <div class="frame16">
+                                <div class="frame14">
+
+                                    <div>
+                                        <h3>Home made pizza</h3>
+                                    </div>
+                                    <div>
+                                        <h3>$299</h3>
+                                    </div>
+                                </div>
+                                <div class="frame14">
+                                    <div class="insideframe14">
+                                        <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                        <div>4.7</div>
+                                    </div>
+                                    <div class="insideframe14">
+                                        <div>15-17 min</div>
+                                    </div>
+                                    <div><img src="./images/Card (2).png" alt=""></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+
+                </section>
+                <div class="btn-par">
+                    <button class="btn-wrapper roboto-bold" id="request-dish-button">Request a Demo</button>
+                </div>
+            </div>
+            <!-- <div class="swiper">
+                    <div class="card-wrapper">
+                        <ul class="swiper-wrapper">
+                            <li class="card swiper-slide">
+                                <div><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                                    <div class="frame16">
+                                        <div class="frame14">
+                        
+                                            <div>
+                                                <h3>Home made pizza</h3>
+                                            </div>
+                                            <div>
+                                                <h3>$299</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frame14">
+                                            <div class="insideframe14">
+                                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                                <div>4.7</div>
+                                            </div>
+                                            <div class="insideframe14">
+                                                <div>15-17 min</div>
+                                            </div>
+                                            <div><img src="./images/Card (2).png" alt=""></div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li class="card swiper-slide">
+                                <div><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                                    <div class="frame16">
+                                        <div class="frame14">
+                        
+                                            <div>
+                                                <h3>Home made pizza</h3>
+                                            </div>
+                                            <div>
+                                                <h3>$299</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frame14">
+                                            <div class="insideframe14">
+                                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                                <div>4.7</div>
+                                            </div>
+                                            <div class="insideframe14">
+                                                <div>15-17 min</div>
+                                            </div>
+                                            <div><img src="./images/Card (2).png" alt=""></div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li class="card swiper-slide">
+                                <div><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                                    <div class="frame16">
+                                        <div class="frame14">
+                        
+                                            <div>
+                                                <h3>Home made pizza</h3>
+                                            </div>
+                                            <div>
+                                                <h3>$299</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frame14">
+                                            <div class="insideframe14">
+                                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                                <div>4.7</div>
+                                            </div>
+                                            <div class="insideframe14">
+                                                <div>15-17 min</div>
+                                            </div>
+                                            <div><img src="./images/Card (2).png" alt=""></div>
+                                        </div>
+                        
+                                    </div>
+                        
+                                </div>
+                            </li>
+                            <li class="card swiper-slide">
+                                <div><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                                    <div class="frame16">
+                                        <div class="frame14">
+                            
+                                            <div>
+                                                <h3>Home made pizza</h3>
+                                            </div>
+                                            <div>
+                                                <h3>$299</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frame14">
+                                            <div class="insideframe14">
+                                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                                <div>4.7</div>
+                                            </div>
+                                            <div class="insideframe14">
+                                                <div>15-17 min</div>
+                                            </div>
+                                            <div><img src="./images/Card (2).png" alt=""></div>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            </li>
+                            <li class="card swiper-slide">
+                                <div><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                                    <div class="frame16">
+                                        <div class="frame14">
+                            
+                                            <div>
+                                                <h3>Home made pizza</h3>
+                                            </div>
+                                            <div>
+                                                <h3>$299</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frame14">
+                                            <div class="insideframe14">
+                                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                                <div>4.7</div>
+                                            </div>
+                                            <div class="insideframe14">
+                                                <div>15-17 min</div>
+                                            </div>
+                                            <div><img src="./images/Card (2).png" alt=""></div>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            </li>
+                            <li class="card swiper-slide">
+                                <div><img src="./images/unsplash_MqT0asuoIcU (1).png " class="cardimg" />
+                                    <div class="frame16">
+                                        <div class="frame14">
+                            
+                                            <div>
+                                                <h3>Home made pizza</h3>
+                                            </div>
+                                            <div>
+                                                <h3>$299</h3>
+                                            </div>
+                                        </div>
+                                        <div class="frame14">
+                                            <div class="insideframe14">
+                                                <div><img src="./images/ant-design_star-filled.png" alt=""></div>
+                                                <div>4.7</div>
+                                            </div>
+                                            <div class="insideframe14">
+                                                <div>15-17 min</div>
+                                            </div>
+                                            <div><img src="./images/Card (2).png" alt=""></div>
+                                        </div>
+                            
+                                    </div>
+                            
+                                </div>
+                            </li>
+                        
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                   
+                </div> -->
+
+
+
+
+        </div>
+    </div>
+    <div class="video-section">
+
+        <div class="heading-video">
+            <h1 class="main-heading-video">We are providing best<br>home cooked food delivery service.</h1>
+            <p class="sub-heading">Away from home and craving the tasty homemade recipes?<br>
+                Choose from a selection of our delicious home cooked dishes</p>
+        </div>
+
+        <!-- first video  -->
+        <div class="custom-video__container ">
+            <div class="overlap">
+                <video class="custom-video__video" width="100%" height="auto" muted>
+                    <source src="./video/123629-728697948_small.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="custom-video__control">
+                    <img src="./images/Polygon 1.png" alt="" class="play-buttton">
+                </div>
+            </div>
+
+        </div>
+        <div class="background-green">
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="contact-section">
+        <div class="form-container">
+            <div class="contact-headings">
+                <h2 id="contact-head">Do you have a question <br> or want to become a seller?</h2>
+                <p id="contact-para">Fill this form and our manager will contact you in the next 48 hours.</p>
+            </div>
+
+            <form class="contact-form">
+                <div class="input-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button class="contact-form-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="./images/Food_delivery_cute_man_riding_motorcycles_cartoon_art_illustration 2.png"
+                alt="Delivery illustration">
+        </div>
+    </div>
+    <div class="footer">
+
+        <nav class="navi">
+
+            <div class="jtgeats">
+                <img src="./images/JTGeats.png" alt="">
+            </div>
+            <div>
+                <ul class="menue">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menue</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="search_cart">
+
+                <div>
+                    <img src="./images/Card (3).png" alt="">
+                </div>
+                <div>
+                    <img src="./images/iconoir_add-to-cart.svg" alt="">
+                </div>
+            </div>
+
+
+        </nav>
+
+
+        <div class="contact-line"></div>
+    </div>
+    </div>
+    <!-- swipper js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
