@@ -969,17 +969,16 @@ opacity: 0px;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  gap:10px;
+  gap: 10px;
   margin-bottom: 30px;
   /* position: relative; */
 }
-.cart-image-model{
-width: 197px;
-height: 225px;
-padding: 18.75px 10.95px 18.75px 20.33px;
-gap: 0px;
-opacity: 0px;
-
+.cart-image-model {
+  width: 197px;
+  height: 225px;
+  padding: 18.75px 10.95px 18.75px 20.33px;
+  gap: 0px;
+  opacity: 0px;
 }
 .dish-modal {
   background-color: white;
